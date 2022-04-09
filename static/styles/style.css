@@ -1,0 +1,114 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; }
+
+:root {
+  --blue: #1e90ff;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 59%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 65%; } }
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+li {
+  list-style: none; 
+}
+
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
+  outline: none; }
+
+button {
+  border: none;
+  cursor: pointer; }
+
+textarea {
+  resize: none; }
+
+.heading-primary {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 4.5rem; } }
+
+.heading-sm {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.text-primary {
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6; }
+  @media only screen and (max-width: 37.5em) {
+    .text-primary {
+      font-size: 2rem; } }
+
+.display-not {
+  display: none; 
+}
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid #eee;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden; }
+  .mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eee;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite; }
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px; } }
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px; } }

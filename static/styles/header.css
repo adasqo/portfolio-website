@@ -1,0 +1,68 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); 
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem; 
+}
+.header-hrefs {
+    display: flex; 
+}
+
+.header-link {
+    padding: 2.2rem 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s; 
+}
+.header-link:hover {
+    color: #0062b9; 
+}
+
+/* Github and Linkedin */
+.socials {
+    top: 50%;
+    text-align: center;
+    display: flex;
+    position: relative;
+    right: 5px;
+}
+
+.social {
+    width: 5rem;
+margin: 2rem;
+}
+.social-link {
+    width: 100%;
+    display: block;
+}
+.social-icon {
+    width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+    .header-content {
+        padding: 0 2rem; 
+    } 
+    .header-link {
+        padding: 3rem 1.8rem;
+        font-size: 1.5rem; 
+    } 
+}
+@media only screen and (max-width: 37.5em) {
+    .header-hrefs {
+        display: none; 
+    } 
+    .socials {
+        display: none; 
+    } 
+}
