@@ -7,7 +7,7 @@ const validateEmail = (email) => {
 };
 
 const sendMessage = (details) => {
-    fetch('https://adamkarwowski-website.herokuapp.com/api/v1/saveMessage', {
+    fetch('/api/v1/saveMessage', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

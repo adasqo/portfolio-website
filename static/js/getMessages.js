@@ -1,5 +1,5 @@
 const getMessages = () => {
-    fetch('https://adamkarwowski-website.herokuapp.com/api/v1/getMessages', {
+    fetch('/api/v1/getMessages', {
             method: 'GET'
         })
         .then(response => response.json())

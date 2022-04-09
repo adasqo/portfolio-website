@@ -34,4 +34,4 @@ def get_message():
     return jsonify(messages)
 
 if __name__ == "__main__":
-    app.run(port=config.port)
+    app.run()
